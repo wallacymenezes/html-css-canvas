@@ -20,13 +20,16 @@
             <form action="">
                 <h1 id="titulo-contato">Entre em contato comigo</h1>
                 <label for="Nome">Nome</label>
-                <input class="campo-form" id="nome" name="Nome" type="text">
+                <input class="campo-form" id="nome" name="Nome" type="text" onkeyup="validaNome()">
                 <label for="Email">E-mail</label>
                 <input class="campo-form" id="email" name="Email" type="email">
                 <label for="Assunto">Assunto</label>
                 <textarea class="campo-form" name="Assunto" id="assunto" cols="25" rows="3"></textarea>
                 <button id="button-form">Enviar</button>
             </form>
+            <div id="msg">
+
+            </div>
         </div>
     
         <div class="infos">
