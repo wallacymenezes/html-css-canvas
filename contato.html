@@ -20,12 +20,12 @@
             <form action="">
                 <h1 id="titulo-contato">Entre em contato comigo</h1>
                 <label for="Nome">Nome</label>
-                <input class="campo-form" id="nome" name="Nome" type="text" onkeyup="validaNome()">
+                <input class="campo-form" id="nome" name="Nome" type="text" onkeyup="validaNome()" required>
                 <label for="Email">E-mail</label>
-                <input class="campo-form" id="email" name="Email" type="email">
+                <input class="campo-form" id="email" name="Email" type="email" onkeyup="validaEmail()" required>
                 <label for="Assunto">Assunto</label>
-                <textarea class="campo-form" name="Assunto" id="assunto" cols="25" rows="3"></textarea>
-                <button id="button-form">Enviar</button>
+                <textarea class="campo-form" name="Assunto" id="assunto" cols="25" rows="3" onkeyup="validaAssunto()"></textarea>
+                <button id="button-form" onclick="enviar()">Enviar</button>
             </form>
             <div id="msg">
 
@@ -45,7 +45,7 @@
                 <p>Telefonee: (21) 99189-0062</p>
             </div>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.3796726560868!2d-43.54411029704821!3d-22.862428983559525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be19586863fef%3A0x845a346dcb4abccf!2sEstr.%20do%20Mendanha%2C%204517-4171%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023095-841!5e0!3m2!1spt-BR!2sbr!4v1722436094779!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.3796726560868!2d-43.54411029704821!3d-22.862428983559525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be19586863fef%3A0x845a346dcb4abccf!2sEstr.%20do%20Mendanha%2C%204517-4171%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023095-841!5e0!3m2!1spt-BR!2sbr!4v1722436094779!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
             </div>
         </div>
     </main>

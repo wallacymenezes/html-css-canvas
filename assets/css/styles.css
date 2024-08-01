@@ -176,3 +176,7 @@ main div{
 #msg{
     margin: 0;
 }
+
+#mapa {
+    transition: width 0.4s ease, height 0.4s ease;
+}
